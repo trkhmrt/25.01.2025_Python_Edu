@@ -73,12 +73,14 @@ emeklilik = False
 #Virgül ve tırnak kullanılmadığında daha pratik bir yöntem sunuyor.
 
 #print içinde f(format) kullanarak verileri yazdırma
+# f ifadesi ile birlikte python tarafından tanımlanmış olan özel yazdırma tekniğini kullanacağımızı söylüyoruz.Bu sayede { } içerisinde istenilen değişkenlerin verileri direkt olarak yazdırılabilir. f-> Format demek. Kısaca  print ile birlikte özel bir formatda yazdırmak istiyorum anlamına geliyor.
 #print(f"İsim:{isim} Soyisim:{soyisim} Kilo:{kilo} Boy:{boy} Emeklilik:{emeklilik}")
 
 
 #Kaçış ifadeleriyle print içerisinde mesaj yazdırma
 #Escape state
 # \n (new line)
+
 
 #print(f"İsim:{isim}\nSoyisim:{soyisim}\nKilo:{kilo}\nBoy:{boy}\nEmeklilik:{emeklilik}")
 
@@ -118,6 +120,10 @@ emeklilik = False
 #             Hamarat
 #     Comp Eng
 # ''')
+
+
+
+
 
 
 
