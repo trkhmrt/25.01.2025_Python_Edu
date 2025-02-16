@@ -11,7 +11,6 @@ matematiksel işlemleri yapmak için kullanılır.
  ** -> Üs alma
 
 """
-
 sayi1 = 3
 sayi2 = 2
 
