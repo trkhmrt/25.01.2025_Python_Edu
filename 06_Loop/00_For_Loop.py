@@ -75,7 +75,6 @@ if start > end:
 if increament < 0:
     increament *=-1
 
-
 for i in range(start,end,increament):
     if i%3==0:
         print(i)
