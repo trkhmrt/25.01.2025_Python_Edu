@@ -181,19 +181,19 @@ ilk eleman indeks numarası 0 dır.
 # print(sayilar2)
 
 #Copy()
-
-copy_sayi1 = [20,85,12,33,99,120]
-copy_sayi2 = []
-
-copy_sayi2 = copy_sayi1.copy()
-
-print(f"Kopya Liste ilk hali:{copy_sayi2}")
-
-copy_sayi2[0] = 10
-
-print(f"Kopya Liste değişim:{copy_sayi2}")
-print(f"Asıl Liste:{copy_sayi1}")
-
+#
+# copy_sayi1 = [20,85,12,33,99,120]
+# copy_sayi2 = []
+#
+# copy_sayi2 = copy_sayi1.copy()
+#
+# print(f"Kopya Liste ilk hali:{copy_sayi2}")
+#
+# copy_sayi2[0] = 10
+#
+# print(f"Kopya Liste değişim:{copy_sayi2}")
+# print(f"Asıl Liste:{copy_sayi1}")
+#
 
 ################ ÖDEV ##########################
 """
@@ -226,10 +226,62 @@ Operasyonlardan sonra ürünler ve fiyatlar listesini mutlaka yazdırıp kullan�
 
 
 Bütün işlemler bittiğinde listenin son halini yazdırın.
+"""
 
 
 
 """
+CHALLENGE
+
+1 adet boş liste tanımlayın.
+
+Kullanıcıdan alınan değerlerden sadece tek olanlar bu liste içerisine kabul edilsin.
+
+Liste uzunluğu 10 olana kadar ekleme işlemi devam etsin.
+
+Liste uzunluğu 10 olduğunda işlemi sonlandırın.Listeyi ekrana yazdırın.
+"""
+
+# liste = []
+#
+# while len(liste)<10:
+#     number = int(input("Bir sayı girin"))
+#
+#     if number%2 == 1:
+#         liste.append(number)
+#     else:
+#         print("Lütfen Tek Sayı giriniz.")
+#
+#     print(f"Liste Uzunluğu:{len(liste)}")
+#
+# print(liste)
+
+
+######### LİSTE ELEMANLARINI DÖNGÜYLE YAZDIRMA ###########
+
+
+#aralik = range(0,10)
+
+#print(aralik)
+
+#aralik_listesi = [0,1,2,3,4,5,6,7,8,9]
+
+isimler = ["Tarık","Berna","Deniz","Yasemin"]
+
+# for i in range(len(isimler)):
+#     print(isimler[i])
+
+
+# for i in isimler:
+#     print(i)
+
+
+######## ENUMERATE #######
+#Start=1 ifadesi arka planda tutulan indeks numaralarını değiştirmez.Sadece daha anlaşılır bir sıralama için ilk elemanı 1 den başlatır.
+for index,item in enumerate(isimler,start=2):
+    print(index,item)
+    print(isimler.index(item))
+
 
 
 
