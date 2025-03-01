@@ -278,9 +278,10 @@ isimler = ["Tarık","Berna","Deniz","Yasemin"]
 
 ######## ENUMERATE #######
 #Start=1 ifadesi arka planda tutulan indeks numaralarını değiştirmez.Sadece daha anlaşılır bir sıralama için ilk elemanı 1 den başlatır.
-for index,item in enumerate(isimler,start=2):
-    print(index,item)
-    print(isimler.index(item))
+# for index,item in enumerate(isimler,start=2):
+#     print(index,item)
+#     print(isimler.index(item))
+
 
 
 
