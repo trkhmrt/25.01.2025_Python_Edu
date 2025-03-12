@@ -29,11 +29,11 @@ Geri değer döndüren => bu metot türleri istenilen veri tipindeki veriyi ça�
 
 """
 ####### PARAMETRESİZ METOT #########
-print("")
-def ekranaMesajYaz():
-    print(f"Merhaba Tarık")
-    print("Sisteme Hoşgeldiniz")
-    print("Bakiyeniz")
+# print("")
+# def ekranaMesajYaz():
+#     print(f"Merhaba Tarık")
+#     print("Sisteme Hoşgeldiniz")
+#     print("Bakiyeniz")
 
 
 # print(f"Merhaba Tarık")
@@ -55,10 +55,10 @@ def ekranaMesajYaz():
 # print("Sisteme Hoşgeldiniz")
 # print("Bakiyeniz")
 
-ekranaMesajYaz()
-ekranaMesajYaz()
-ekranaMesajYaz()
-ekranaMesajYaz()
+# ekranaMesajYaz()
+# ekranaMesajYaz()
+# ekranaMesajYaz()
+# ekranaMesajYaz()
 
 
 # for i in range(3):
@@ -72,14 +72,71 @@ ekranaMesajYaz()
 #     print("Sisteme Hoşgeldiniz")
 #     print("Bakiyeniz")
 #
-#
-#
-#
+######### TRY EXCEPT ###########
 # ekranaMesajYaz("Tarık")
-# ekranaMesajYaz("Yusuf")
-# ekranaMesajYaz("Ozan")
-# ekranaMesajYaz("Sercan")
+# def ekranaMesajYaz(isim,soyisim,bakiye,dogumyili):
+#     try:
+#         print(f"Merhaba {isim} {soyisim}")
+#         print("Sisteme Hoşgeldiniz")
+#         print(f"Bakiyeniz:{bakiye}")
+#         if dogumyili==0:
+#             raise ValueError("Dogum yili sıfıra eşit olamaz")
+#         else:
+#             print(f"Yaş:{2025-dogumyili}")
+#     except ValueError as ve:
+#         print(ve)
+
+list=[]
+
+# def ekranaMesajYaz(isim,soyisim,bakiye,dogumyili):
+#     try:
+#         print(f"Merhaba {isim} {soyisim}")
+#         print("Sisteme Hoşgeldiniz")
+#         print(f"Bakiyeniz:{bakiye}")
+#         print(list[10]) # 10.indekste eleman olmadığı için hata fırlatacak.
+#         if dogumyili==0:
+#             raise ValueError("Dogum yili sıfıra eşit olamaz")
+#         else:
+#             print(f"Yaş:{2025-dogumyili}")
+#     except ValueError as ve:
+#         print(ve)
 #
+#
+#
+#
+# try:
+#     ekranaMesajYaz("Tarık", "Hamarat", "900", 0)
+# except:
+#     print("BİR HATA MEYDANA GELDİ")
+#
+# print("EN SON BEN ÇAŞLIŞTIM")
+
+#
+# def bolum():
+#     try:
+#         print(12 / 0)
+#         print(list[10])
+#     except IndexError as ie:
+#         print("Index Error hatası metot içindeki exception çalıştı")
+#
+#
+# try:
+#     bolum()
+# except Exception as e:
+#     print(e)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
