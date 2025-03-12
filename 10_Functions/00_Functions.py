@@ -29,15 +29,36 @@ Geri değer döndüren => bu metot türleri istenilen veri tipindeki veriyi ça�
 
 """
 ####### PARAMETRESİZ METOT #########
-# def ekranaMesajYaz():
-#     print(f"Merhaba Tarık")
-#     print("Sisteme Hoşgeldiniz")
-#     print("Bakiyeniz")
+print("")
+def ekranaMesajYaz():
+    print(f"Merhaba Tarık")
+    print("Sisteme Hoşgeldiniz")
+    print("Bakiyeniz")
+
+
+# print(f"Merhaba Tarık")
+# print("Sisteme Hoşgeldiniz")
+# print("Bakiyeniz")
 #
 #
-# ekranaMesajYaz()
+# print(f"Merhaba Tarık")
+# print("Sisteme Hoşgeldiniz")
+# print("Bakiyeniz")
 #
-# ekranaMesajYaz()
+#
+# print(f"Merhaba Tarık")
+# print("Sisteme Hoşgeldiniz")
+# print("Bakiyeniz")
+#
+#
+# print(f"Merhaba Tarık")
+# print("Sisteme Hoşgeldiniz")
+# print("Bakiyeniz")
+
+ekranaMesajYaz()
+ekranaMesajYaz()
+ekranaMesajYaz()
+ekranaMesajYaz()
 
 
 # for i in range(3):

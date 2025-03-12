@@ -25,6 +25,7 @@ FileNotFounderror => Dosya bulunamadığında oluşur.
 SyntaxError => Python aid kodların söz diziminde hata yapıldığında alınır
 
 IndentationError => if , def , while , try gibi indentation kuralına uyulması gereken yerlrde uyulmadığında bu hata alınır.
+
 """
 
 ####### ZeroDivisionError #######
@@ -41,7 +42,7 @@ IndentationError => if , def , while , try gibi indentation kuralına uyulması 
 #     print("Merhaba")
 # except:
 #     print("Sıfıra bölünme hatası")
-#
+
 
 ######## IndexError #########
 
@@ -64,16 +65,16 @@ IndentationError => if , def , while , try gibi indentation kuralına uyulması 
 
 
 ####### TYPE ERROR ########
-# sayi = 10
-# isim = "Tarık"
+#sayi = 10
+#isim = "Tarık"
 #
-# sonuc = sayi + isim
+#sonuc = sayi + isim
 
 
 
 ######## ModuleNotFoundError  ######
 #import trk
-#
+
 # try:
 #     import trk
 # except:
@@ -81,7 +82,9 @@ IndentationError => if , def , while , try gibi indentation kuralına uyulması 
 
 
 ##### FileNotFoundError ######
-#dosya = open("olmayan_dosya.txt","r")
+#dosya = open("1.txt","r",encoding="utf-8")
+# dosya_icerigi = dosya.readlines()
+# print(dosya_icerigi)
 # try:
 #     dosya = open("olmayan_dosya.txt","r")
 # except:
@@ -89,12 +92,12 @@ IndentationError => if , def , while , try gibi indentation kuralına uyulması 
 
 
 
-
-###### Exception as e ile hata mesajı içeriğini görüntüleme #######
+#
+# ###### Exception as e ile hata mesajı içeriğini görüntüleme #######
 # try:
-#     # sayi1 = 10
-#     # sayi2 = 0
-#     # print(sayi1 / sayi2)
+#     sayi1 = 10
+#     sayi2 = 0
+#     print(sayi1 / sayi2)
 #     list = []
 #     print(list[0])
 # except Exception as e:
@@ -104,9 +107,9 @@ IndentationError => if , def , while , try gibi indentation kuralına uyulması 
 
 ###### HATA TÜRLERİNİ AYRI EXCEPTIONLARDA ELE ALMA ##########
 # try:
-#     # sayi1 = 10
-#     # sayi2 = 0
-#     # print(sayi1 / sayi2)
+#     sayi1 = 10
+#     sayi2 = 0
+#     print(sayi1 / sayi2)
 #     list = []
 #     print(list[0])
 # except ZeroDivisionError:
@@ -127,13 +130,13 @@ IndentationError => if , def , while , try gibi indentation kuralına uyulması 
 
 
 ######## SyntaxError   #####
-#print("
+#print(
 
 
 
 ######## IndentationError  ########
-# if True:
-# print("Merhaba")
+ # if True:
+ #  print("Merhaba")
 
 
 ####### KEYERROR => Sözlükte olmayan bir anahtar çağrıldığında hata verir ######
@@ -143,8 +146,8 @@ IndentationError => if , def , while , try gibi indentation kuralına uyulması 
 
 
 ###### ATTRIBUTEERROR => olmayan bir metodu veya özelliği çağırmaya çalıştığımızda ######
-# yas = 10
-# yas.count()
+# yas = 100
+# print(yas.count("0"))
 
 ######## NAME_ERROR => Tanımlanmamış Değişken kullanıldığında  #######
 #print(x)  #x herhangi bir yerde tanımlı değil
@@ -159,11 +162,14 @@ IndentationError => if , def , while , try gibi indentation kuralına uyulması 
 
 # try:
 #     yas = 17
-#
 #     if yas < 18:
 #         raise ValueError("Yaş 18 den küçük")
 # except ValueError as e:
 #     print(e)
+
+
+
+
 
 
 
