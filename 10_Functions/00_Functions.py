@@ -126,20 +126,6 @@ list=[]
 #     print(e)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ##### GERİ DEĞER DÖNDÜRMEYEN ######
 # return kullanmadan metodun kendisini yazdırmak istediğimizde none denen bir hata aldık.
 # def sayilariTopla(s1,s2):
@@ -237,6 +223,60 @@ Bunları metot metot içerisinde  İsimli kişinin yaşı şudur ve hobileride b
 #
 #
 # print(bilgileriYaz(isim,yas,hobiler))
+
+
+"""
+GERİ DEĞER DÖNDÜREN METOTLAR RETURN
+
+
+"""
+
+# def mesajYaz():
+#     mesaj = "Merhaba Dünya"
+#     return mesaj
+#
+#
+#
+# metottan_gelen_return_degeri = mesajYaz()
+#
+# print(metottan_gelen_return_degeri)
+
+
+
+# def sayilariTopla(s1,s2):
+#     return s1+s2
+#
+#
+# sayi1 = int(input("Sayı 1'i giriniz"))
+# sayi2 = int(input("Sayi 2'yi giriniz"))
+#
+#
+# toplam = sayilariTopla(sayi1,sayi2)
+#
+# print(toplam)
+
+
+
+##### RETURN İFADESİ METOTLARDA BREAK GİBİ GÖREV GÖRÜR ########
+#
+# def mesaj():
+#     return "Tarık"
+#     print("Merhaba Dünya")
+#     print(3+5)
+#
+# print(mesaj())
+
+
+
+# def test():
+#     return
+#     print("Merhaba Dünya")
+
+#test()
+
+
+
+
 
 
 
