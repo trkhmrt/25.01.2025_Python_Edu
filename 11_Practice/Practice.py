@@ -19,6 +19,16 @@ While True ile MEnü oluşturulacak.
 Metotlar kullanılacak.
 Ekle,sil,Güncelle bunlar için geri değer döndürmeyen metotlar kullanılacak.
 Ara işlemleri geriye değer döndüren metotlarda yazılacak.
+
+
+CRUD OPERATION
+
+Create
+Read
+Update
+Delete
+
+
 """
 
 # Ürünleri sözlük olarak tanımladık. Key-Value

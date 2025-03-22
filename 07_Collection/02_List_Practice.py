@@ -124,5 +124,5 @@ while True:
 
 
 #Tuple,Set(Küme),Dictionary "İsim":"Tarık"
-#Object oriented Programming (OOP)
+#Object oriented Programming (12_OOP)
 
