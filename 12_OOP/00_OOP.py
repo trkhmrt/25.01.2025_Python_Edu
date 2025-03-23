@@ -18,6 +18,7 @@ Nesnelerin şablonudur.
 
 
 Class Nasıl Tanımlanır ?
+Class içerisinde tanımlanan kapısayısı renk motorgucu gibi değişkenler o classın propertysi olarak geçer
 
 class Araba:
     kapiSayisi = ""
@@ -55,6 +56,8 @@ class Ogrenci:
     soyisim = ""
     yas = ""
 
+
+
 # yeniOgrenci = Ogrenci()
 # yeniOgrenci.isim = "Tarık"
 # yeniOgrenci.soyisim = "Hamarat"
@@ -90,18 +93,66 @@ for i in range(5):
     ogrenciListesi.append(yeniOgrenci)
 
 
+
 #Liste içerisindeki nesnelerin ekrana yazdırılması
-for index,ogrenci in enumerate(ogrenciListesi):
-    print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
+# for index,ogrenci in enumerate(ogrenciListesi):
+#     print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
 
 #Liste içerisinde aranan herhangi bir nesnenin ekrana getirilmesi.
+# userIndex = int(input("İd giriniz:"))
+#
+# bulunanOgrenci = ogrenciListesi[userIndex]
+#
+#
+# print(bulunanOgrenci.isim , bulunanOgrenci.soyisim , bulunanOgrenci.yas)
+
+#Alternatif Eleman bulma ve ekrana yazdırma
+
+# userIndex = int(input("İd giriniz:"))
+#
+# for i in range(len(ogrenciListesi)):
+#     if userIndex == i:
+#         print(ogrenciListesi[i].isim ,  ogrenciListesi[i].soyisim, ogrenciListesi[i].yas)
+#         break
+
+
+#ALTERNATİF ELEMAN BULMA
+
+# userIndex = int(input("İd giriniz:"))
+#
+# for index,ogrenci in enumerate(ogrenciListesi):
+#     if userIndex == index:
+#         print(ogrenci.isim,ogrenci.yas,ogrenci.soyisim)
+#         break
+
+
+
+##### ELEMAN SİLME ######
+# for index,ogrenci in enumerate(ogrenciListesi):
+#     print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
+#
+# userIndex = int(input("İd giriniz:"))
+#
+# ogrenciListesi.remove(ogrenciListesi[userIndex])
+#
+#
+#
+# for index,ogrenci in enumerate(ogrenciListesi):
+#     print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
+
+
+####### ELEMAN GÜNCELLEME #########
+for index,ogrenci in enumerate(ogrenciListesi):
+     print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
+
 userIndex = int(input("İd giriniz:"))
 
 bulunanOgrenci = ogrenciListesi[userIndex]
 
+bulunanOgrenci.isim = input("Yeni isim giriniz")
 
-print(bulunanOgrenci.isim , bulunanOgrenci.soyisim , bulunanOgrenci.yas)
-
+for index,ogrenci in enumerate(ogrenciListesi):
+     print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
 
 
 
