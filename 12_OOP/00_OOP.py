@@ -142,17 +142,17 @@ for i in range(5):
 
 
 ####### ELEMAN GÜNCELLEME #########
-for index,ogrenci in enumerate(ogrenciListesi):
-     print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
-
-userIndex = int(input("İd giriniz:"))
-
-bulunanOgrenci = ogrenciListesi[userIndex]
-
-bulunanOgrenci.isim = input("Yeni isim giriniz")
-
-for index,ogrenci in enumerate(ogrenciListesi):
-     print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
+# for index,ogrenci in enumerate(ogrenciListesi):
+#      print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
+#
+# userIndex = int(input("İd giriniz:"))
+#
+# bulunanOgrenci = ogrenciListesi[userIndex]
+#
+# bulunanOgrenci.isim = input("Yeni isim giriniz")
+#
+# for index,ogrenci in enumerate(ogrenciListesi):
+#      print(f"{index}-İsim:{ogrenci.isim}-Soyisim:{ogrenci.soyisim}-Yaş:{ogrenci.yas}")
 
 
 
