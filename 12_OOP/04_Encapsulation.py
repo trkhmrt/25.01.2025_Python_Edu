@@ -12,21 +12,16 @@ Kodu düzenli , bakımı kolay ve güvenli hale getirir.
 """
 
 """
-_ (alt çizgi) ifadesi ile değişken sismi gizlenir.
+_ (alt çizgi) ifadesi ile değişken ismi gizlenir.
 
 __(iki alt çizgi) private yapar.Tamamen gizler.
 """
-
-
-
-
-
 """
 @Getter
-
 @Setter
-
 """
+
+
 class Araba:
     _marka = ""
     __renk = ""
@@ -41,8 +36,8 @@ class Araba:
 
 
 araba = Araba()
+#araba._marka = ""
 #araba._marka = "BMW"
-
 
 araba.set_renk("Kırmızı")
 print(araba.get_renk())

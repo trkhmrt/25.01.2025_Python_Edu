@@ -10,8 +10,8 @@ Bu yüzden en hızlı çalışan metot olarak isimlendirilir.
 
 
 # class Araba:
-#     def __init__(self,renk,motorGucu):
-#         self.renk = renk
+#     def __init__(self,color,motorGucu):
+#         self.renk = color
 #         self.motorGucu = motorGucu
 #         print("Ben constructor metodum.Nesne üretildiğinde çalışırım.")
 #         print(f"{self.arabaOzelliginiYazdir()} constructorla birlikte bu özellikler gönderildi.")
@@ -31,6 +31,7 @@ class Araba:
     def __init__(self, color, hp):
         self.renk = color
         self.motorGucu = hp
+        self.kapiSayisi = 2
 
     def __str__(self):
         return f"Renk:{self.renk} motorGucu:{self.motorGucu}"
