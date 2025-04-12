@@ -17,6 +17,9 @@ class Ogretmen(insan):
     def OgrenciSayisi(self,value):
         self.__ogrenciSayisi = value
 
+    def __str__(self):
+        print(super().__str__(), end="")
+        return f"DersSayisi:{self.VerdigiDersSayisi} ÖğrenciSayısı:{self.OgrenciSayisi}"
 
 
 

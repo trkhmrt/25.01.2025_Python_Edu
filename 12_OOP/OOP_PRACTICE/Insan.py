@@ -23,5 +23,8 @@ class Insan:
     def DogumTarihi(self, value):
         self.__dogumTarihi = value
 
+    def __str__(self):
+        return f"İsim:{self.Isim} Soyisim:{self.SoyIsim} DoğumTarihi:{self.DogumTarihi}"
+
 def sayHello():
     pass

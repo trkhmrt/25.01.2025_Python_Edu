@@ -10,6 +10,10 @@ class KantinGorevlisi(insan):
         self.__urunAdet = value
 
 
+    def __str__(self):
+        print(super().__str__(), end="")
+        return f"UrunAdet:{self.UrunAdet}"
+
 
 
 

@@ -7,6 +7,11 @@ ogretmenler = []
 kantinGorevlileri = []
 
 
+def Listeleme(parametreListe):
+    for idx, itm in enumerate(parametreListe):
+        print(f"{idx}-{itm}")
+
+
 
 while(True):
     secim = int(input("1-Ekleme İşlemleri\n2-Silme İşlemleri\n3-Listeleme İşlemleri\n4-Çıkış"))
@@ -34,12 +39,11 @@ while(True):
     elif secim == 2:
         silmeSecim = int(input("1-Öğrenci Silme İşlemleri\n2-Öğretmen Silme İşlemleri\n3-KantinGörevlisi Silme İşlemleri"))
         if silmeSecim == 1:
-            for idx,itm in enumerate(ogrenciler):
-                print(f"{idx}-{itm}")
+            Listeleme(ogrenciler)
         elif silmeSecim == 2:
-            pass
+            Listeleme(ogretmenler)
         elif silmeSecim == 3:
-            pass
+            Listeleme(kantinGorevlileri)
 
     elif secim == 3:
         pass

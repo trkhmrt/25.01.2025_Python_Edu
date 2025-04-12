@@ -25,5 +25,6 @@ class Ogrenci(insan):
         self.__sinifSube = value
 
     def __str__(self):
-        return f"İsim:{self.Isim} Soyisim:{self.SoyIsim} DoğumTarihi:{self.DogumTarihi} NotOrtalaması:{self.NotOrtalamasi}"
+        print(super().__str__(),end="")
+        return f"NotOrtalaması:{self.NotOrtalamasi}"
 
