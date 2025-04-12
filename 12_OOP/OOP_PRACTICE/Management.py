@@ -1,9 +1,13 @@
 from Ogrenci import Ogrenci
 from Ogretmen import Ogretmen
 from KantinGorevlisi import KantinGorevlisi
+from SeedData import *
+
 
 ogrenciler = []
+ogrenciler.append(OgrenciOlustur())
 ogretmenler = []
+ogretmenler.append(OgretmentOlustur())
 kantinGorevlileri = []
 
 
@@ -11,6 +15,13 @@ def Listeleme(parametreListe):
     for idx, itm in enumerate(parametreListe):
         print(f"{idx}-{itm}")
 
+
+def ListedenSil(parametreListe,idx):
+    if len(parametreListe) == 0:
+        return "Listede Eleman Yok"
+    else:
+        parametreListe.pop(idx)
+        return "Eleman Başarıyla Silindi."
 
 
 while(True):
@@ -40,10 +51,15 @@ while(True):
         silmeSecim = int(input("1-Öğrenci Silme İşlemleri\n2-Öğretmen Silme İşlemleri\n3-KantinGörevlisi Silme İşlemleri"))
         if silmeSecim == 1:
             Listeleme(ogrenciler)
+            silinecekIndex = int(input("Index değeri girin:"))
+            print(ListedenSil(ogrenciler,silinecekIndex))
         elif silmeSecim == 2:
             Listeleme(ogretmenler)
+            silinecekIndex = int(input("Index değeri girin:"))
+            print(ListedenSil(ogretmenler, silinecekIndex))
         elif silmeSecim == 3:
             Listeleme(kantinGorevlileri)
+            print(ListedenSil(kantinGorevlileri, silinecekIndex))
 
     elif secim == 3:
         pass

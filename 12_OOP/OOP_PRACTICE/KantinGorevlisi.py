@@ -11,8 +11,7 @@ class KantinGorevlisi(insan):
 
 
     def __str__(self):
-        print(super().__str__(), end="")
-        return f"UrunAdet:{self.UrunAdet}"
+        return f"{super().__str__()} UrunAdet:{self.UrunAdet}"
 
 
 
