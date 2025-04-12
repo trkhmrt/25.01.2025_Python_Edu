@@ -1,4 +1,6 @@
 class Insan:
+    __piSayisi = 3.14
+
     @property
     def isimDegeri(self):
         return self.__isim
@@ -10,7 +12,6 @@ class Insan:
 
 insan = Insan()
 insan.isimDegeri = "Tarık"
-
 print(insan.isimDegeri)
 
 print("")
